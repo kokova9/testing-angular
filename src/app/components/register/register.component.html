@@ -1,0 +1,22 @@
+<div class="container mt-4 text-center">
+    <h1>Register</h1>
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-4">
+            <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+                <div class="form-group mt-4">
+                    <label for="name">Username</label>
+                    <input type="text" class="form-control" formControlName="username" required>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="name">Password</label>
+                    <input type="password" class="form-control" formControlName="password" required>
+                </div>
+                <div class="form-group mt-4">
+                    <button class="btn btn-primary btn-block" type="submit">Register</button>
+                </div>
+            </form>
+            <a class="nav-link" routerLinkActive="active" routerLink="/login">Login</a>
+        </div>
+    </div>
+</div>
+
